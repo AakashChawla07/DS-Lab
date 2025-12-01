@@ -10,8 +10,8 @@ public:
 };
 class CLL
 {
+    public:
     Node *head;
-public:
     CLL(Node *head = NULL)
     {
         this->head = head;

@@ -10,10 +10,10 @@ public:
     Node(int value = 0) : val(value), prev(NULL), next(NULL) {}
 };
 class DLL {
+    public:
     Node* head;
     Node* tail;
 
-public:
     DLL() {
         head = NULL;
         tail = NULL;
