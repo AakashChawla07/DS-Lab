@@ -1,15 +1,15 @@
 #include<iostream>
 using namespace std;
 #define MAX 100
-struct PriorityQueue 
+class PriorityQueue 
 {
+    public:
     int arr[MAX];
     int size;
+    PriorityQueue(){
+        size=0;
+    }
 };
-void init(PriorityQueue &pq) 
-{
-    pq.size=0;
-}
 void insert(PriorityQueue &pq, int value) 
 {
     if (pq.size>=MAX) 
@@ -67,7 +67,6 @@ void print(PriorityQueue pq)
 int main() 
 {
     PriorityQueue pq;
-    init(pq);
     insert(pq,5);
     insert(pq,22);
     insert(pq,14);
